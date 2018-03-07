@@ -125,7 +125,7 @@ h1, h2, h3 {
 }
 
 .vision {
-	border-radius: 20px;
+	border-radius: 10%;
 }
 
 .about-text {
@@ -140,7 +140,7 @@ h1, h2, h3 {
 
 .service-section {
 	max-width: 1600px;
-	padding: 50px 15px;
+	padding: 150px 15px;
 	margin: 0 auto;
 	background-color: #262626;
 }
@@ -180,7 +180,7 @@ h1, h2, h3 {
 
 #contact {
 	max-width: 1600px; 
-	padding: 120px 0;
+	padding: 150px 0;
 	height: auto;
 	margin: 0 auto; 
 	background: #262626; 
