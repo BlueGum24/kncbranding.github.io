@@ -50,10 +50,11 @@ h1, h2, h3 {
 }
 
 
-.carousel-inner {
+.banner-inner {
 	margin-top: 30px;
 	max-height: 100vh;
 }
+
 
 
 @media(max-width: 600px) {
@@ -71,7 +72,7 @@ h1, h2, h3 {
 }
 
 @media(max-width: 600px) {
-	.carousel-inner {
+	.banner-inner {
 		margin-top: 100px; 
 	}
 }
@@ -155,25 +156,61 @@ h1, h2, h3 {
 
 .service-box {
 	background-color: #383838;
-	margin: 20px 0;
+	margin: 50px 0;
 	border: solid 2px;
-	padding: 10px 0;
+	padding: 10px 0 0 0;
 	width: 280px;
+	border-radius: 20px;
 }
 
 .serv-heading {
-	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 24px;
 }
 
 .serv-img {
 	width: 270px;
 	height: 220px;
+	border-radius: 20px;
 }
 
 .btn {
-	margin: 25px 0;
+	margin: 25px 0 0 0;
 }
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.service-box:hover .image {
+  opacity: 0.1;
+}
+
+.service-box:hover .middle {
+  opacity: 1;
+}
+
+#myModal .modal-dialog {
+    -webkit-transform: translate(0, 50%);
+    -o-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+
+}
 
 
 /* Contact page */
@@ -188,7 +225,7 @@ h1, h2, h3 {
 
 #contact {
 	max-width: 1600px; 
-	padding: 150px 0;
+	padding: 100px 0;
 	height: auto;
 	margin: 0 auto; 
 	background: #262626; 
@@ -269,19 +306,12 @@ h1, h2, h3 {
 
 
 
-/*Services2-section*/
-
-.service2-section {
-	padding: 50px 0;
-	margin: 0 auto;
-}
-
 
 /* Footer */
 
 footer {
 	width: 100%;
-	height: 150px;
+	min-height: 150px;
 	background-color: #5e4485;
 	padding: 10px 10px;
 }
