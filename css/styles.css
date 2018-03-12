@@ -1,16 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
+
 body {
 	background-color: #262626;
+	font-family: Raleway;
 }
 
-h1, h2, h3, h4, p{
-	font-family: Raleway;
-	color: #A6A6A6;
-	padding: 0;
-	margin: 0;
+html, body {
+	overflow-x: hidden;
 }
+
 
 h1, h2, h3 {
 	font-weight: 700;
@@ -57,25 +57,13 @@ h1, h2, h3 {
 
 
 
-@media(max-width: 600px) {
 
-	#icon {
-		max-width: 150px;
-	}
-
-	h2 {
-		font-size: 1.8em;
-	}
-	.col-sm-4 {
-		text-align: center;
-	}
+.carousel {
+	overflow: hidden;
 }
 
-@media(max-width: 600px) {
-	.banner-inner {
-		margin-top: 100px; 
-	}
-}
+
+
 
 #icon {
 	max-width: 200px;
@@ -84,15 +72,20 @@ h1, h2, h3 {
 }
 
 .wwd-section {
+	color: white;
 	max-width: 1600px;
 	margin: 0 auto;
-	padding: 50px 0;
+	padding: 150px 0;
 	background-color: #262626;
 
 }
 
 .wwd-heading {
 	padding: 60px 0;
+}
+
+.wwd-subheading {
+	padding-top: 10px;
 }
 
 .wwd-image {
@@ -102,16 +95,16 @@ h1, h2, h3 {
 }
 
 .wwd-box {
-	max-width: 300px;
-	height: 400px;
+	width: 300px;
+	height: auto;
 	margin: 20px auto;
-	background-color: #383838;
+	background-color: #5e4485;
 	border: solid 2px #262626;
 	border-radius: 20px;
-	padding: 2px 0;
+	padding: 20px 10px;
 }
 
-
+/*
 .grow { 
 	transition: all .2s ease-in-out; 
 }
@@ -119,15 +112,15 @@ h1, h2, h3 {
 .grow:hover { 
 	transform: scale(1.1); 
 }
-
+*/
 
 
 .about-section {
+	color: white;
 	max-width: 1600px;
 	margin: auto;
 	padding: 50px 10px;
 	background-color: #262626;
-	color: #353535;
 }
 .col-md-6 {
 	max-width: 100%;
@@ -138,7 +131,7 @@ h1, h2, h3 {
 }
 
 .about-text {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 
@@ -148,24 +141,27 @@ h1, h2, h3 {
 /* Services styles */
 
 .service-section {
+	color: white;
 	max-width: 1600px;
-	padding: 120px 15px;
+	padding: 150px 15px;
 	margin: 0 auto;
 	background-color: #262626;
 }
 
 .service-box {
-	background-color: #383838;
+	background-color: #5e4485;
 	margin: 50px 0;
-	border: solid 2px;
+	border: solid #5e4485 2px;
 	padding: 10px 0 0 0;
 	width: 280px;
 	border-radius: 20px;
 }
 
 .serv-heading {
+	color: white;
 	padding-bottom: 20px;
 	font-size: 24px;
+	letter-spacing: 1px;
 }
 
 .serv-img {
@@ -175,7 +171,18 @@ h1, h2, h3 {
 }
 
 .btn {
-	margin: 25px 0 0 0;
+	margin: 55px 0 0 10px;	
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.btn-one {
+	background-color: #49acea;
+	font-family: "Roboto", sans-serif;
 }
 
 .image {
@@ -224,8 +231,9 @@ h1, h2, h3 {
 }
 
 #contact {
+	color: white;
 	max-width: 1600px; 
-	padding: 120px 0 60px 0;
+	padding: 140px 0 170px 0;
 	height: auto;
 	margin: 0 auto; 
 	background: #262626; 
@@ -337,3 +345,33 @@ footer h4 {
 }
 
 
+
+
+
+/*Media Queries*/
+@media(max-width: 770px) {
+
+	#icon {
+		max-width: 150px;
+	}
+
+	h2 {
+		font-size: 1.8em;
+	}
+	.col-sm-4 {
+		text-align: center;
+	}
+
+	.banner-inner {
+		margin-top: 100px; 
+	}
+
+	.wwd-section {
+		padding: 30px 0;
+	}
+
+	.service-box {
+		margin: 10px auto;
+	}
+	
+}
