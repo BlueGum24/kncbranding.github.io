@@ -313,17 +313,52 @@
           </div>
           <br>
           <br>
-          <form action="https://formspree.io/vernon.phil03@gmail.com"
+          <form id="contactform" data-toggle="validator" role="form" action="https://formspree.io/keithan.phil@gmail.com"
           method="POST">
-            <input type="text" name="name" placeholder="NAME">
-            <input  type="email" name="_replyto" placeholder="E-MAIL">
-            <input  type="text" name="subject" placeholder="SUBJECT">
-            <textarea  name="message" placeholder="MESSAGE"></textarea>
-            <button name="submit" type="submit" value="Send" class="submit">SEND</button>
+            <div class="form-group">
+              <label for="inputName" class="control-label">NAME</label>
+              <input type="text" name="name" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail" class="control-label">EMAIL</label>
+              <input  type="email" name="email" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="inputSubject" class="control-label">SUBJECT</label>
+              <input  type="text" name="subject" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="inputMessage" class="control-label">MESSAGE</label>
+              <textarea  name="message" required></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <button name="submit" type="submit" value="Send" id="sendMessage" class="submit">SEND</button>
+              <script type="text/javascript">
+                var message = "";
+
+                $("#sendMessage").on("click", function() {
+                    message = $("#contactform").serialize();
+                    $.ajax({
+                        url: "//formspree.io/dynamicrealities@gmail.com", 
+                        method: "POST",
+                        data: {message: message},
+                        dataType: "json"
+                    });
+                    alert('Thanks for the email, we\'ll be in touch promptly.');
+                    return false;
+                });
+              </script>
+
+            </div>
           </form>
         </div>
       </div>
     </section>
+
 
 
     <!--Footer-->
