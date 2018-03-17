@@ -313,7 +313,7 @@
           </div>
           <br>
           <br>
-          <form id="contactform" data-toggle="validator" role="form" action="https://formspree.io/keithan.phil@gmail.com"
+          <form id="contactform" data-toggle="validator" role="form" action="https://formspree.io/vernon.phil03@gmail.com"
           method="POST">
             <div class="form-group">
               <label for="inputName" class="control-label">NAME</label>
@@ -336,14 +336,14 @@
               <div class="help-block with-errors"></div>
             </div>
             <div class="form-group">
-              <button name="submit" type="submit" value="Send" id="sendMessage" class="submit">SEND</button>
+              <button name="submit" type="submit" id="sendMessage" class="submit">SEND</button>
               <script type="text/javascript">
                 var message = "";
 
                 $("#sendMessage").on("click", function() {
                     message = $("#contactform").serialize();
                     $.ajax({
-                        url: "//formspree.io/dynamicrealities@gmail.com", 
+                        url: "//formspree.io/vernon.phil03@gmail.com", 
                         method: "POST",
                         data: {message: message},
                         dataType: "json"
