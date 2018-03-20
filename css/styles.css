@@ -31,13 +31,13 @@ h1, h2, h3 {
 	float: left;
 	color: #ccc;
 	background-color: white;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 
 .logo {
 	height: 75px;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 
