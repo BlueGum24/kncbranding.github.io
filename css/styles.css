@@ -19,10 +19,10 @@ h1, h2, h3 {
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
-	background-color: #5e4485;
+	background-color: #60098C;
 	color: #fff;
 	min-height: 100px;
-	padding: 2% 0;
+	padding-top: 12px;
 	font-size: 1.2em;
 	border: 0;
 }
@@ -30,22 +30,25 @@ h1, h2, h3 {
 .navbar-brand {
 	float: left;
 	color: #ccc;
-	max-height: 55px;
-	padding: 0 15px 5px;
+	background-color: white;
+	margin: 0;
+	padding: 0;
 }
 
 .logo {
-	height: 45px;
-	margin: auto;
+	height: 75px;
+	margin: 0;
+	padding: 0;
 }
 
 
 .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
 	color: #fff;
-	background-color: #5e4485;
+	background-color: #60098C;
 }
 
 .navbar-inverse .navbar-nav li a{
+	margin-top: 10px;
 	color: #d5d5d5;
 }
 
@@ -98,7 +101,7 @@ h1, h2, h3 {
 	width: 300px;
 	height: auto;
 	margin: 20px auto;
-	background-color: #5e4485;
+	background-color: #60098C;
 	border: solid 2px #262626;
 	border-radius: 20px;
 	padding: 20px 10px;
@@ -143,15 +146,15 @@ h1, h2, h3 {
 .service-section {
 	color: white;
 	max-width: 1600px;
-	padding: 150px 15px;
+	padding: 150px 15px 15px 15px;
 	margin: 0 auto;
 	background-color: #262626;
 }
 
 .service-box {
-	background-color: #5e4485;
+	background-color: #60098C;
 	margin: 50px 0;
-	border: solid #5e4485 2px;
+	border: solid #60098C 2px;
 	padding: 10px 0 0 0;
 	width: 280px;
 	border-radius: 20px;
@@ -272,7 +275,7 @@ h1, h2, h3 {
 
 #contact .container form input:focus,
 #contact .container form textarea:focus {
-	border:2px solid #5e4485;
+	border:2px solid #60098C;
 	color:#999;
 }
 
@@ -285,7 +288,7 @@ h1, h2, h3 {
 	padding: 5px 10px;
 	font-size: 12px;
 	letter-spacing: 1px;
-	background: #5e4485;
+	background: #60098C;
 	height: 40px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -300,7 +303,7 @@ h1, h2, h3 {
 
 #contact .container form .submit:hover {
 	color: #FFF;
-	border: 2px solid #5e4485;
+	border: 2px solid #60098C;
 	background: #4B366A;
 	cursor: pointer;
 }
@@ -333,7 +336,7 @@ h1, h2, h3 {
 footer {
 	width: 100%;
 	min-height: 150px;
-	background-color: #5e4485;
+	background-color: #60098C;
 	padding: 10px 10px;
 }
 
